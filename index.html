@@ -1,42 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Extintor</title>
-    <meta charset="utf-8">
-    <meta name="description" content="&lt;model-viewer&gt; template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta name="description" content="&lt;model-viewer&gt; template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" href="./styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
-    <model-viewer src="extintor.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="2.371deg 82.51deg 12.55m" field-of-view="30deg" auto-rotate>
-      <button class="Hotspot" slot="hotspot-1" data-position="0.4452781447117039m 1.511106218314802m 0.597041971926639m" data-normal="0.5829105374877331m -1.0917143894793566e-7m 0.8125363409015934m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Cilindro</div>
-      </button><button class="Hotspot" slot="hotspot-2" data-position="-1.805170615003032m 4.01273523901645m 0.09853765430222161m" data-normal="-0.049807254963264415m 0.00011965111951784145m 0.9987588412808339m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Manguera</div>
-      </button><button class="Hotspot" slot="hotspot-3" data-position="-1.205531244979751m 1.144532763475918m 0.15096457711515449m" data-normal="0.04966151911115983m -0.0000028354270895488425m 0.9987661055079575m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Boquilla</div>
-      </button><button class="Hotspot" slot="hotspot-4" data-position="0.050711445293022295m 5.061298935075403m 0.3310796959718577m" data-normal="0.5316698095657726m 0.8469517185744901m 1.1379544911629049e-7m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Manómetro</div>
-      </button><button class="Hotspot" slot="hotspot-5" data-position="0.5157701757418336m 5.600339624345041m 0.011074675383063615m" data-normal="-0.15056880516483967m 0.9885995321216853m 1.3282708481103046e-7m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Palanca activadora</div>
-      </button><button class="Hotspot" slot="hotspot-6" data-position="0.07637679160690136m 5.220493162051384m -0.3516537920421798m" data-normal="-0.06604569477157037m 0.7646169822042005m -0.6410919097345418m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Pasador de seguridad</div>
-      </button><button class="Hotspot" slot="hotspot-7" data-position="0.026199711499352685m 2.518803738261336m 0.7447286265670394m" data-normal="0.0721733322481006m 1.575107731636603e-7m 0.9973921044966121m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Etiqueta</div>
+    <model-viewer
+      src="extintor.glb"
+      ios-src="extintor.usdz"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      tone-mapping="neutral"
+      poster="poster.webp"
+      shadow-intensity="1"
+      camera-orbit="2.371deg 82.51deg 12.55m"
+      field-of-view="30deg"
+      auto-rotate
+      style="--progress-bar-color:#4f0b7b; --progress-bar-height:10px"
+    >
+      <button
+        class="Hotspot"
+        slot="hotspot-1"
+        data-position="0.4452781447117039m 1.511106218314802m 0.597041971926639m"
+        data-normal="0.5829105374877331m -1.0917143894793566e-7m 0.8125363409015934m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Cilindro</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-2"
+        data-position="-1.805170615003032m 4.01273523901645m 0.09853765430222161m"
+        data-normal="-0.049807254963264415m 0.00011965111951784145m 0.9987588412808339m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Manguera</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-3"
+        data-position="-1.205531244979751m 1.144532763475918m 0.15096457711515449m"
+        data-normal="0.04966151911115983m -0.0000028354270895488425m 0.9987661055079575m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Boquilla</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-4"
+        data-position="0.050711445293022295m 5.061298935075403m 0.3310796959718577m"
+        data-normal="0.5316698095657726m 0.8469517185744901m 1.1379544911629049e-7m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Manómetro</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-5"
+        data-position="0.5157701757418336m 5.600339624345041m 0.011074675383063615m"
+        data-normal="-0.15056880516483967m 0.9885995321216853m 1.3282708481103046e-7m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Palanca activadora</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-6"
+        data-position="0.07637679160690136m 5.220493162051384m -0.3516537920421798m"
+        data-normal="-0.06604569477157037m 0.7646169822042005m -0.6410919097345418m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Pasador de seguridad</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-7"
+        data-position="0.026199711499352685m 2.518803738261336m 0.7447286265670394m"
+        data-normal="0.0721733322481006m 1.575107731636603e-7m 0.9973921044966121m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Etiqueta</div>
       </button>
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-          Ver en realidad aumentada
-      </button>
-      <div id="ar-prompt">
-          <img src="ar_hand_prompt.png">
-      </div>
-    </model-viewer>  
+      
+      
+      
+    </model-viewer>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
   </body>
 </html>
